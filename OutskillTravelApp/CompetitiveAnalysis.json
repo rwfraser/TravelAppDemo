@@ -1,0 +1,366 @@
+sustainable_travel_ai_competitive_landscape = [
+    # ------------------ 15 (weakest vs your AI+customization criteria) ------------------
+    {
+        "rank": 1,
+        "name": "Camps International",
+        "overall_score_0_to_10": 2.5,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 2.0,
+        "summary": {
+            "ai_use": (
+                "No visible AI-driven trip-planning or personalization. "
+                "Digital presence is primarily informational and form-based."
+            ),
+            "trip_planning": (
+                "Focused on fully supported, pre-structured school expeditions. "
+                "Some tailoring for school needs, but itineraries are relatively templated "
+                "and audience is narrow (student groups rather than general travelers)."
+            ),
+            "implication_for_your_product": (
+                "Not a strong direct competitor for a consumer-facing AI itinerary engine, "
+                "but sets a bar for ethical positioning around youth/school expeditions."
+            ),
+        },
+    },
+
+    {
+        "rank": 2,
+        "name": "Rainforest Expeditions",
+        "overall_score_0_to_10": 3.0,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 2.5,
+        "summary": {
+            "ai_use": (
+                "No evidence of AI-based tooling; standard content, enquiry forms and PDFs."
+            ),
+            "trip_planning": (
+                "Strong but geographically narrow: lodge-based Amazon trips in Peru with expert-guided "
+                "experiences and some ability to design custom itineraries via specialist agents "
+                "or partner platforms. High depth, low breadth."
+            ),
+            "implication_for_your_product": (
+                "Deep-niche eco-operator: easy for your AI app to surface as one option among many "
+                "for Amazon trips, but they don’t threaten a cross-destination AI meta-layer."
+            ),
+        },
+    },
+
+    {
+        "rank": 3,
+        "name": "Adventure Alternative",
+        "overall_score_0_to_10": 3.5,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 3.0,
+        "summary": {
+            "ai_use": (
+                "No visible AI personalization or recommendation layer on the site; "
+                "operations look very human- and email/phone-led."
+            ),
+            "trip_planning": (
+                "Long history in responsible mountaineering/trekking. Explicitly promotes "
+                "personalised adventures and avoiding standard packages, with itineraries adapted "
+                "to dates, routes, and group preferences, but mostly via manual consultancy."
+            ),
+            "implication_for_your_product": (
+                "High-touch custom planning but low tech. Your AI engine could become the ‘front door’ "
+                "that qualifies/advises clients before handing off to outfitters like this."
+            ),
+        },
+    },
+
+    {
+        "rank": 4,
+        "name": "Gondwana Ecotours",
+        "overall_score_0_to_10": 3.8,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 3.3,
+        "summary": {
+            "ai_use": (
+                "No explicit AI signals; likely uses standard CRM/marketing tools but nothing "
+                "differentiated or publicly AI-branded."
+            ),
+            "trip_planning": (
+                "Curated small-group itineraries with strong eco credentials and some flexibility "
+                "on dates/private departures. Less ‘design from scratch’ than tailoring within "
+                "a curated tour portfolio."
+            ),
+            "implication_for_your_product": (
+                "Good candidate to be recommended as a supplier within your app for specific "
+                "destinations; they don’t own the discovery or decision UX with AI."
+            ),
+        },
+    },
+
+    {
+        "rank": 5,
+        "name": "Asilia Africa",
+        "overall_score_0_to_10": 4.0,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 3.5,
+        "summary": {
+            "ai_use": (
+                "No visible AI-driven web tooling; site is polished but conventional in UX."
+            ),
+            "trip_planning": (
+                "High-end safari specialist with strong conservation model and a big emphasis on "
+                "tailor-made and private safaris (family, luxury, etc.). Very good at designing "
+                "bespoke trips within East Africa, but this is human planner–centric."
+            ),
+            "implication_for_your_product": (
+                "Serious competitor at the *execution* layer in East Africa, but your AI app can sit "
+                "above as a cross-destination comparison and routing engine, including or excluding "
+                "Asilia based on client profile and budget."
+            ),
+        },
+    },
+
+    {
+        "rank": 6,
+        "name": "Wild Frontiers Adventure Travel",
+        "overall_score_0_to_10": 4.2,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 3.7,
+        "summary": {
+            "ai_use": (
+                "No explicit AI mentions; strong brand but tech stack appears standard."
+            ),
+            "trip_planning": (
+                "Award-winning, B Corp adventure company with both small-group tours and "
+                "tailor-made holidays worldwide. Customization is solid and stylish, but "
+                "interface and matching are human-driven, not algorithmic."
+            ),
+            "implication_for_your_product": (
+                "They compete on brand, style and guide quality rather than data-driven matching. "
+                "Your AI differentiation is in unbiased, multi-operator comparison and itinerary synthesis."
+            ),
+        },
+    },
+
+    {
+        "rank": 7,
+        "name": "ABOUTAsia Travel",
+        "overall_score_0_to_10": 4.4,
+        "ai_integration_0_to_5": 0.5,
+        "trip_customization_0_to_5": 3.9,
+        "summary": {
+            "ai_use": (
+                "No evidence of AI-based website features; booking flows are traditional luxury-DMC style."
+            ),
+            "trip_planning": (
+                "Hyper-focused on bespoke, crowd-avoiding, responsible trips in Cambodia/Indochina, "
+                "with profits supporting a large schools programme. Very strong at white-glove, "
+                "fully customized itineraries — but entirely planner-led."
+            ),
+            "implication_for_your_product": (
+                "Excellent ‘backend’ provider for the region. Your AI layer could, for example, detect "
+                "a traveler who hates crowds + wants educational impact, and surface ABOUTAsia as "
+                "the ideal contractor without them needing to discover it manually."
+            ),
+        },
+    },
+
+    {
+        "rank": 8,
+        "name": "Responsible Travel (UK aggregator)",
+        "overall_score_0_to_10": 4.6,
+        "ai_integration_0_to_5": 1.0,
+        "trip_customization_0_to_5": 3.6,
+        "summary": {
+            "ai_use": (
+                "Large, filter-heavy site with good search and segmentation by destination, theme and "
+                "ethics, but no public indication of AI-based recommendations beyond conventional "
+                "search/filter and content marketing."
+            ),
+            "trip_planning": (
+                "Thousands of trips via vetted local partners plus a subset of tailor-made tours. "
+                "Good at matching users via filters and human advisors, but not deeply interactive "
+                "or diagnostic in how preferences are elicited."
+            ),
+            "implication_for_your_product": (
+                "Closest thing to a ‘responsible travel aggregator’ today, but still filter-centric. "
+                "Your AI survey + matching engine would be a clear step beyond checkbox filtering."
+            ),
+        },
+    },
+
+    {
+        "rank": 9,
+        "name": "Exodus Travels",
+        "overall_score_0_to_10": 5.0,
+        "ai_integration_0_to_5": 1.5,
+        "trip_customization_0_to_5": 3.5,
+        "summary": {
+            "ai_use": (
+                "No dedicated AI trip planner, but as a large operator they use modern digital marketing, "
+                "SEO and partnerships (e.g. with Byway for train-based access to group tours). Likely using "
+                "standard analytics/segmentation, but not clearly AI-forward to the customer."
+            ),
+            "trip_planning": (
+                "Huge catalogue (500+ itineraries in 90+ countries) with a nature-positive policy. "
+                "Many trips are fixed small-group adventures; customization means choosing from a "
+                "large menu and occasionally tweaking via agents rather than fully bespoke design."
+            ),
+            "implication_for_your_product": (
+                "Strong breadth but relatively generic funnel. Your AI app can sit one level higher, "
+                "triaging travelers into ‘best-fit’ Exodus departures vs. competitors or custom trips."
+            ),
+        },
+    },
+
+    {
+        "rank": 10,
+        "name": "Pura Aventura",
+        "overall_score_0_to_10": 5.5,
+        "ai_integration_0_to_5": 1.0,
+        "trip_customization_0_to_5": 4.5,
+        "summary": {
+            "ai_use": (
+                "Well-built digital platform (Rails-based, client portal, etc.) but no public AI features. "
+                "Discovery is led by content, vacation finder tools, and human consultants."
+            ),
+            "trip_planning": (
+                "B Corp specializing in sustainable, tailor-made trips in Latin America, Spain & Portugal. "
+                "Heavy emphasis on designing itineraries around each client’s interests and their "
+                "Travel Positive™ framework. Customization is excellent, but fully human-driven."
+            ),
+            "implication_for_your_product": (
+                "Gold standard for bespoke, values-led design in its regions, but with ‘manual’ matching. "
+                "Your AI product could emulate their diagnostic questioning across many operators/destinations."
+            ),
+        },
+    },
+
+    {
+        "rank": 11,
+        "name": "Natural Habitat Adventures",
+        "overall_score_0_to_10": 5.8,
+        "ai_integration_0_to_5": 1.0,
+        "trip_customization_0_to_5": 4.8,
+        "summary": {
+            "ai_use": (
+                "No public AI recommender; digital experience is premium but conventional "
+                "(trip pages, enquiry forms, resource pages)."
+            ),
+            "trip_planning": (
+                "Extremely strong on high-touch custom planning: private safaris, custom Costa Rica "
+                "and Africa trips, with decades of experience and WWF partnership. Very high quality "
+                "guides and an explicit ‘quality-value guarantee’. Customization is elite but human-centric."
+            ),
+            "implication_for_your_product": (
+                "A top-tier execution partner for wildlife/nature itineraries. Your AI layer could "
+                "pre-qualify travelers who truly need their level of guiding and budget, and route them there."
+            ),
+        },
+    },
+
+    # ------------------ Top 4 are where AI becomes a visible differentiator ------------------
+
+    {
+        "rank": 12,
+        "name": "Much Better Adventures",
+        "overall_score_0_to_10": 6.5,
+        "ai_integration_0_to_5": 3.0,
+        "trip_customization_0_to_5": 3.5,
+        "summary": {
+            "ai_use": (
+                "Marketplace platform with significant automation: uses recommendation/behavioral "
+                "engines (e.g. Recombee-style product recommendations), behavioral email automation, "
+                "and a UX that immediately asks what kind of trip you want and adjusts options. "
+                "AI is supporting discovery and marketing rather than full itinerary design."
+            ),
+            "trip_planning": (
+                "Curated adventure weekends and trips run by local hosts. Customization is mainly "
+                "about choosing from filtered, well-tagged adventures, with some flexibility per host, "
+                "not deep scratch-built itineraries."
+            ),
+            "implication_for_your_product": (
+                "Closest to a ‘tech-forward sustainable adventure marketplace’. Still, it doesn’t collect "
+                "rich psychographic/sustainability preferences up front the way your diagnostic survey could."
+            ),
+        },
+    },
+
+    {
+        "rank": 13,
+        "name": "G Adventures",
+        "overall_score_0_to_10": 7.5,
+        "ai_integration_0_to_5": 4.0,
+        "trip_customization_0_to_5": 3.5,
+        "summary": {
+            "ai_use": (
+                "Heavy use of AI-powered personalization via Dynamic Yield: they tailor homepage hero, "
+                "trip content, navigation and recommendations based on user behavior and affinities, "
+                "driving double-digit uplifts in purchase and revenue per user. Also experiments with "
+                "ML (e.g., neural network blog experiments) on their tech blog."
+            ),
+            "trip_planning": (
+                "700+ small-group responsible adventures worldwide. Primary model is selecting from "
+                "pre-built tours, albeit in many ‘travel styles’. Custom/private options exist but "
+                "are secondary to the group-tour engine."
+            ),
+            "implication_for_your_product": (
+                "They are strong at *on-site personalization* but still within their own catalogue. "
+                "Your cross-operator AI meta-layer plus deeper value/sustainability matching would "
+                "still be a distinct proposition."
+            ),
+        },
+    },
+
+    {
+        "rank": 14,
+        "name": "Intrepid Travel",
+        "overall_score_0_to_10": 8.5,
+        "ai_integration_0_to_5": 4.5,
+        "trip_customization_0_to_5": 4.0,
+        "summary": {
+            "ai_use": (
+                "Very advanced data stack: Salesforce CRM, Marketing Cloud, Tealium CDP, event-stream "
+                "architecture and real-time behavioral data to drive personalized offers and journeys. "
+                "Experimenting with Salesforce Einstein AI for copy and engagement optimization, and "
+                "migrating to a composable headless CMS. This is one of the most mature AI/analytics "
+                "implementations in sustainable travel."
+            ),
+            "trip_planning": (
+                "World’s largest adventure travel B Corp with trips on all seven continents plus a "
+                "growing Tailor-Made division focused on custom/private travel. Lots of choice and "
+                "increasing focus on custom travel, but final tailoring is still heavily handled by "
+                "human consultants."
+            ),
+            "implication_for_your_product": (
+                "Intrepid is the closest incumbent to having a fully data-driven, AI-augmented pipeline. "
+                "Your competitive edge must be: (1) being brand-neutral across operators, (2) going much "
+                "deeper on sustainability metrics and traveler psychology, and (3) generating multi-operator "
+                "itineraries, not just picking from one brand’s catalogue."
+            ),
+        },
+    },
+
+    {
+        "rank": 15,
+        "name": "Byway",
+        "overall_score_0_to_10": 9.5,
+        "ai_integration_0_to_5": 5.0,
+        "trip_customization_0_to_5": 4.5,
+        "summary": {
+            "ai_use": (
+                "Byway’s entire value proposition is built around AI. Its proprietary JourneyAI "
+                "takes customer inputs (+ historic trip performance, transport timetables, fares, "
+                "and constraints) to design multi-leg, flight-free journeys autonomously. "
+                "It also aims to handle disruption by re-planning routes and will increasingly "
+                "automate delay handling. This is genuine AI-native trip-planning IP."
+            ),
+            "trip_planning": (
+                "Strong on customization within the slow-travel niche: overland, multi-stop itineraries "
+                "across Europe (and expanding), with a human concierge layer backing up the AI. "
+                "Offers both inspiration-from-templates and from-scratch journeys; high resilience and "
+                "robustness is baked into the planning logic."
+            ),
+            "implication_for_your_product": (
+                "Byway is your most direct conceptual competitor on the AI side, but focused on "
+                "no-fly European overland holidays. To differentiate, you’ll want broader global coverage, "
+                "a stronger explicit eco-impact layer, and meta-level comparison across many providers, "
+                "potentially including Byway itself as one of the options."
+            ),
+        },
+    },
+]
