@@ -54,6 +54,23 @@
     box-sizing: border-box;
 }
 
+/* ==========================================================================
+   Dropdown Menu Styles (for navigation)
+   ========================================================================== */
+
+.dropdown {
+    position: relative !important;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block !important;
+}
+
+.dropdown-menu {
+    z-index: 9999 !important;
+}
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: var(--bg-primary);
