@@ -69,63 +69,78 @@
     </div>
   </nav>
 
-  <header>
-    <h1>Sustainable Travel Companies</h1>
-    <p class="subtitle">
-      Ordered from <strong>BEST to WORST</strong> based on two criteria:
-      (1) degree of AI integration in website and operations, and
-      (2) quality & variety of trip-planning services and customization capability.
-    </p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>🌍 Sustainable Travel AI Companies</h1>
+      <div class="subtitle">Competitive Landscape Analysis - Best to Worst</div>
+    </header>
 
-  <main>
-    <h2>Ranking (Best → Worst)</h2>
-    <ol>
+    <div class="content">
+      <div class="legend">
+        <h3>📊 Ranking Criteria</h3>
+        <div class="legend-grid">
+          <div class="legend-item">
+            <div class="color-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            <div><strong>Overall Score:</strong> Combined rating (0-10 scale)</div>
+          </div>
+          <div class="legend-item">
+            <div class="color-box" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);"></div>
+            <div><strong>AI Integration:</strong> Tech sophistication (0-5 scale)</div>
+          </div>
+          <div class="legend-item">
+            <div class="color-box" style="background: linear-gradient(135deg, #27ae60 0%, #229954 100%);"></div>
+            <div><strong>Trip Customization:</strong> Flexibility & personalization (0-5 scale)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tier-header">
+        🏆 Top Performers - AI-First Companies
+      </div>
       <!-- 1. Byway -->
-      <li>
-        <article class="card">
-          <div class="card-header">
-            <div class="name">
-              <span class="rank">#1</span> Byway
+      <div class="competitor-card top-tier">
+        <div class="card-header">
+          <div class="rank-badge">1</div>
+          <div class="company-name">Byway ⭐</div>
+        </div>
+        <div class="scores-grid">
+          <div class="score-item">
+            <div class="score-label">Overall Score</div>
+            <div class="score-value">9.5</div>
+            <div class="score-bar"><div class="score-fill" style="width: 95%;"></div></div>
+          </div>
+          <div class="score-item">
+            <div class="score-label">AI Integration</div>
+            <div class="score-value">5.0 / 5</div>
+            <div class="score-bar"><div class="score-fill" style="width: 100%;"></div></div>
+          </div>
+          <div class="score-item">
+            <div class="score-label">Trip Customization</div>
+            <div class="score-value">4.5 / 5</div>
+            <div class="score-bar"><div class="score-fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+        <div class="summary-section">
+          <div class="summary-item">
+            <div class="summary-title">🤖 AI Use</div>
+            <div class="summary-text">
+              Byway's value proposition is built around AI. Its proprietary JourneyAI takes customer inputs plus data on trip performance, timetables, fares, and constraints to design multi-leg, flight-free journeys autonomously. It also aims to handle disruption by re-planning routes and will increasingly automate delay handling. This is genuine AI-native trip-planning IP.
             </div>
-            <div class="scores">
-              <span><span class="label">Overall:</span> 9.5 / 10</span>
-              <span><span class="label">AI Integration:</span> 5.0 / 5</span>
-              <span><span class="label">Trip Customization:</span> 4.5 / 5</span>
+          </div>
+          <div class="summary-item">
+            <div class="summary-title">✈️ Trip Planning & Customization</div>
+            <div class="summary-text">
+              Strong customization within the slow-travel niche: overland, multi-stop itineraries across Europe (and expanding), backed by a human concierge layer. Offers both template-based inspiration and from-scratch journeys with high resilience and robustness built into the planning logic.
             </div>
           </div>
-          <div class="section">
-            <div class="section-title">AI Use</div>
-            <p>
-              Byway’s value proposition is built around AI. Its proprietary JourneyAI
-              takes customer inputs plus data on trip performance, timetables, fares,
-              and constraints to design multi-leg, flight-free journeys autonomously.
-              It also aims to handle disruption by re-planning routes and will
-              increasingly automate delay handling. This is genuine AI-native
-              trip-planning IP.
-            </p>
+          <div class="summary-item">
+            <div class="summary-title">💡 Implication For Your Product</div>
+            <div class="summary-text">
+              Byway is the most direct conceptual competitor on the AI side, but focused on no-fly European overland holidays. To differentiate, your AI app can offer broader global coverage, stronger explicit eco-impact metrics, and meta-level comparison across many providers (potentially including Byway) rather than a single-operator stack.
+            </div>
           </div>
-          <div class="section">
-            <div class="section-title">Trip Planning & Customization</div>
-            <p>
-              Strong customization within the slow-travel niche: overland, multi-stop
-              itineraries across Europe (and expanding), backed by a human concierge
-              layer. Offers both template-based inspiration and from-scratch journeys
-              with high resilience and robustness built into the planning logic.
-            </p>
-          </div>
-          <div class="section">
-            <div class="section-title">Implication for Your Product</div>
-            <p>
-              Byway is the most direct conceptual competitor on the AI side, but
-              focused on no-fly European overland holidays. To differentiate, your
-              AI app can offer broader global coverage, stronger explicit eco-impact
-              metrics, and meta-level comparison across many providers (potentially
-              including Byway) rather than a single-operator stack.
-            </p>
-          </div>
-        </article>
-      </li>
+        </div>
+      </div>
 
       <!-- 2. Intrepid Travel -->
       <li>
@@ -722,8 +737,12 @@
           </div>
         </article>
       </li>
-    </ol>
-  </main>
+    </div>
+
+    <footer>
+      <p>Competitive Analysis Report | Generated December 2025</p>
+    </footer>
+  </div>
 </body>
 </html>
 ```
