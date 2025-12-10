@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Survey Development - Group 78 Eco Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Group 78 Eco Travel Itinerary</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="members.html" class="hover:underline">Team</a></li>
+                <li><a href="about.html" class="hover:underline">About</a></li>
+                <li><a href="workbook.html" class="hover:underline">Workbook</a></li>
+                <li class="dropdown relative">
+                    <a href="#" class="hover:underline">Mileposts ▾</a>
+                    <div class="dropdown-content">
+                        <a href="CompetitiveAnalysis.html">Competitive Analysis</a>
+                        <a href="CompetitiveAnalysis_v2.html">Competitive Analysis v2</a>
+                    </div>
+                </li>
+                <li class="dropdown relative">
+                    <a href="#" class="hover:underline font-semibold">Drafts ▾</a>
+                    <div class="dropdown-content">
+                        <a href="IGSysPrompt.html">IG AutoPostPrompt</a>
+                        <a href="SampleItineraries.html">Initial Itineraries</a>
+                        <a href="PersonalityPrompt.html" class="font-semibold">Personality Prompt</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h1 class="text-4xl font-bold text-purple-700 mb-6">Personality Survey Development</h1>
+            
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Initial Prompt (GPT-4.1 Mini)</h2>
+                <div class="bg-gray-50 border-l-4 border-purple-500 p-4 mb-4">
+                    <p class="italic">"Please recommend a method by which we can build a personality profile that will assist in defining an individual's preferred form and style of sustainable travel. Please formulate 5-7 simple questions designed to guide the development of this personality profile."</p>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Project Context</h2>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <h3 class="font-bold mb-2">Role</h3>
+                    <p class="mb-4">You are an expert Django full stack web developer with 10 years experience.</p>
+                    
+                    <h3 class="font-bold mb-2">Task</h3>
+                    <p class="mb-4">You are tasked with the creation of a full stack Django-based eco-tourism web site which will allow prospective travelers to signup, answer a brief survey about their knowledge and interests, and which will then use AI inference techniques to fashion three customized travel itineraries for them which will be an excellent match for their knowledge and interests.</p>
+                    
+                    <p class="mb-4">The travel itineraries will be analyzed carefully to ensure that there are no time conflicts for scheduled items such as flights, hotels, tours, car reservations, pre-planned events, or excursions, or any other item which requires meeting a deadline. The itinerary items will be chosen from a wide range of eco-friendly and sustainable travel operators, as well as general travel industry operators such as airlines, car rental agencies, and hoteliers and are chosen to be compatible and harmonious with the character and values of the client, based on an AI personality analysis of their survey answers. Where possible, the chosen vendors, excursions, outings, and other activities are of an environmentally-sensitive, eco-friendly nature with low carbon impact. The itinerary items will be chosen such that the length of each itinerary will be from 7-10 days, including return travel.</p>
+                    
+                    <h3 class="font-bold mb-2">Workflow</h3>
+                    <p class="mb-4">Prospective Travelers will navigate to the website and will land on the home page, which will explain the function of the website, with some details on how to use it. The prospective traveler will then select the signup button and will be provided a web form where they will provide their full name, email address, and password. The app will send a confirmation email to the address with a verification link which will return the prospective traveler to a landing page with an invitation to complete the Travel Survey. The email verification link will trigger account creation and confirmation such that the user is now considered 'logged in' to the site. Django handles all of the details of User accounts, logins, and passwords in a fashion that is widely regarded as meeting rigorous security standards.</p>
+                    
+                    <p>This web app will deliver a brief survey to the end user and the answers will be analyzed and then converted into a series of highly-engineered AI prompts which will be submitted to models which are best suited to develop a detailed personality profile of the end user.</p>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Initial Response - Survey Method</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4">
+                    <p class="mb-4"><strong>Method:</strong> Use a short survey that assesses travel attitudes, values, and habits focusing on sustainability preferences. Analyze responses to categorize travelers into profiles (e.g., eco-activist, cultural explorer, minimalist traveler).</p>
+                    
+                    <h3 class="font-bold mb-2">Questions:</h3>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li>How important is environmental impact when choosing your travel mode? (Not important – Very important)</li>
+                        <li>What type of accommodation do you prefer? (Hotels, hostels, eco-lodges, camping)</li>
+                        <li>How do you prefer to travel between destinations? (Car, train, bike, walking, plane)</li>
+                        <li>Would you choose a longer route if it meant lower carbon emissions? (Yes/No)</li>
+                        <li>What activities do you enjoy most during travel? (Nature hikes, cultural tours, city exploration, volunteering, other). <em>You may add up to 3 additional items, please rank all items in order of preference.</em></li>
+                        <li><em>On a scale of 1 – 10</em>, how much does supporting local communities affect your travel choices?</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Revised Survey Questions</h2>
+                <div class="bg-purple-50 border-l-4 border-purple-500 p-4">
+                    <p class="mb-4 text-sm italic">Feedback: These questions can be restructured to yield more information. Instead of yes/no questions or only 4 fixed choices, we can receive responses on scales like 1 to 10, or rate options from most to least preferred, and allow for additional items provided by the participant (limited to 1-3 items). Different scales should be used appropriately: '1 to 10', '1 to 5', or qualitative scales like 'poor, fair, good, very good, excellent' or 'disagree, somewhat disagree, neither agree nor disagree, somewhat agree, completely agree'.</p>
+                    
+                    <ol class="list-decimal list-inside space-y-3">
+                        <li><strong>How important is minimizing environmental impact when choosing travel?</strong><br>
+                        <span class="text-sm">(Options: Not important, Slightly important, Moderately important, Very important, Extremely important)</span></li>
+                        
+                        <li><strong>Rank these accommodations from most to least preferred:</strong> hotels, hostels, eco-lodges, camping. You may add up to 2 other types.</li>
+                        
+                        <li><strong>Rank your preferred travel modes:</strong> car, train, bike, walking, plane. You may add up to 2 others.</li>
+                        
+                        <li><strong>How willing are you to take longer, lower-carbon routes?</strong><br>
+                        <span class="text-sm">(Options: Completely unwilling, Somewhat unwilling, Neutral, Somewhat willing, Completely willing)</span></li>
+                        
+                        <li><strong>Rank these activities by preference:</strong> nature hikes, cultural tours, city exploration, volunteering. You may add up to 2 others.</li>
+                        
+                        <li><strong>How much does supporting local communities affect your travel choices?</strong><br>
+                        <span class="text-sm">(Options: Not at all, A little, Moderately, Very much, Extremely)</span></li>
+                        
+                        <li><strong>Do you prefer planned itineraries or spontaneous travel?</strong></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Expert Evaluation - FBI Profiler Perspective</h2>
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                    <h3 class="font-bold mb-2">Role</h3>
+                    <p class="mb-4">You are an expert FBI personality profiler with an entire successful career of developing psychological profiles of individuals based upon small data sets pertaining to their known behaviors.</p>
+                    
+                    <h3 class="font-bold mb-2">Assessment</h3>
+                    <p class="mb-4">The provided 7 questions are moderately useful but limited for deep personality profiling. They reveal preferences and environmental attitudes but miss broader psychological traits (e.g., openness, risk tolerance, social orientation) critical for matching nuanced travel styles.</p>
+                    
+                    <h3 class="font-bold mb-2">Plan for Processing Responses:</h3>
+                    <ul class="list-disc list-inside mb-4 space-y-1">
+                        <li>Quantify ranked preferences using weighted scores.</li>
+                        <li>Convert Likert-type answers to numeric scales (1–5).</li>
+                        <li>Identify clusters of preferences to group travelers (e.g., eco-focused, adventure seekers).</li>
+                        <li>Combine these clusters with demographic or behavioral data (if available) for richer profiles.</li>
+                    </ul>
+                    
+                    <h3 class="font-bold mb-2">Advice to Improve:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Add questions targeting traveler's risk tolerance, social interaction preference, need for novelty, and flexibility.</li>
+                        <li>Include scenario-based questions to reveal motivations and decision styles.</li>
+                        <li>Use psychometric frameworks (Big Five traits) adapted for travel context.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Final Survey (8 Questions)</h2>
+                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-4">
+                    <p class="mb-4 text-sm italic">This survey is designed to give compact but useful psychological insight into travelers, targeting environmental attitudes, preference for structure vs flexibility, openness to novelty and risk, social orientation, and core travel motivation.</p>
+                    
+                    <ol class="list-decimal list-inside space-y-3">
+                        <li><strong>Environmental priorities</strong><br>
+                        On a scale from 1 to 5, how important is it for you to minimize your environmental impact when you travel?<br>
+                        <span class="text-sm">(1 = Not important at all, 5 = Extremely important)</span></li>
+                        
+                        <li><strong>Route and carbon impact</strong><br>
+                        How willing are you to choose longer routes if they have a lower carbon footprint?<br>
+                        <span class="text-sm">(1 = Completely unwilling, 5 = Completely willing)</span></li>
+                        
+                        <li><strong>Planning style</strong><br>
+                        When it comes to planning your trips, which do you prefer?<br>
+                        <span class="text-sm">a) A structured, well-planned itinerary<br>
+                        b) Spontaneous, flexible plans</span></li>
+                        
+                        <li><strong>Comfort with novelty</strong><br>
+                        How comfortable are you with trying new and unfamiliar activities while traveling?<br>
+                        <span class="text-sm">(1 = Not comfortable at all, 5 = Very comfortable)</span></li>
+                        
+                        <li><strong>Decision-making style</strong><br>
+                        How do you typically make travel decisions?<br>
+                        <span class="text-sm">a) Based on detailed research and careful planning<br>
+                        b) Spontaneously, based on mood or opportunity</span></li>
+                        
+                        <li><strong>Social orientation</strong><br>
+                        How much do you enjoy social interaction during your trips?<br>
+                        <span class="text-sm">(1 = Prefer mostly solitude, 5 = Actively seek social engagement)</span></li>
+                        
+                        <li><strong>Appetite for adventure/risk</strong><br>
+                        How open are you to adventurous or slightly risky travel experiences?<br>
+                        <span class="text-sm">(1 = Not open at all, 5 = Very open)</span></li>
+                        
+                        <li><strong>Main travel motivation</strong><br>
+                        Which of the following best describes your primary motivation for traveling? (Select one)<br>
+                        <span class="text-sm">a) Relaxation and comfort<br>
+                        b) Cultural exploration and learning<br>
+                        c) Adventure and thrill-seeking<br>
+                        d) Supporting local communities and sustainability</span></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Traveler Profiles Framework</h2>
+                <div class="bg-gray-50 border-l-4 border-gray-500 p-4">
+                    <p class="mb-4">Based on the survey responses, travelers can be categorized into the following profiles:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-green-700">1. Eco-Planner</h3>
+                            <p class="text-sm">Calm, conscientious travelers who care deeply about impact and like control. They want lower-carbon routes, are willing to accept longer travel times if framed as "eco" and "thoughtful", and like detailed plans, clear expectations, and trustworthy providers.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-green-700">2. Eco-Adventurer</h3>
+                            <p class="text-sm">Environmentally conscious, but also high on novelty and risk. They want meaningful, lower-impact trips with some edge: hiking, biking, remote eco-lodges, volunteering, or "off the beaten path" but still sustainable.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-orange-700">3. Spontaneous Adventurer</h3>
+                            <p class="text-sm">Thrill-seeking, novelty-oriented, flexible about plans, less driven by impact. They want freedom, last-minute options, and "cool things to do now."</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-blue-700">4. Comfort-Seeking Relaxer</h3>
+                            <p class="text-sm">Low on risk/novelty, high on comfort and predictability. They want easy, safe, comfortable experiences: resorts, all-inclusives, familiar destinations, smooth transfers, and minimal hassle.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-purple-700">5. Cultural Explorer</h3>
+                            <p class="text-sm">Curious, reflective travelers who want depth over adrenaline. They want local food, history, art, walking tours, homestays, language experiences; okay with some complexity if it leads to authenticity.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-green-700">6. Community-Focused Changemaker</h3>
+                            <p class="text-sm">Strong value-driven travelers; impact and local benefit are central. They want their money to support local people, not just big chains. Open to homestays, co-ops, volunteering, social enterprises, and responsible wildlife or conservation projects.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-pink-700">7. Social Weekender</h3>
+                            <p class="text-sm">Moderate novelty, very social, often comfort or light adventure focused. They want fun, social, often short trips: city breaks, festivals, nightlife, group tours.</p>
+                        </div>
+                        
+                        <div class="bg-white p-4 rounded shadow">
+                            <h3 class="font-bold text-lg text-indigo-700">8. Solo Wanderer</h3>
+                            <p class="text-sm">More introspective; values autonomy, may be structured or freeform. They value independence, reflection, and control over their schedule. May lean to quiet nature, small towns, or slower city exploration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-12">
+        <p>&copy; 2024 Group 78. All rights reserved.</p>
+    </footer>
+</body>
+</html>
