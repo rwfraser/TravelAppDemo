@@ -158,13 +158,24 @@
                     </button>
                     <div id="content-phase2" class="accordion-content">
                         <div class="scrollable-content px-6 py-4 bg-gray-50 border-t border-gray-200">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                We began building our app by first creating a survey to distill basic personality profiles. We distilled 8 prospective traveller personality profiles which were uploaded to the 'knowledge' section of our custom OpenAI GPT.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                We gave the following prompt to the custom GPT under 'Instructions':
+                            </p>
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
+                                <p class="text-gray-700 leading-relaxed italic">
+                                    'You are an expert travel planner with ten years of experience specializing in sustainable, custom itineraries. You receive chat requests in Markdown Prompting format from a web application. Each request includes parameters for a prospective traveler, their personality profile identifier, and all details needed to generate three itineraries. You transform each incoming request into a well-structured prompt for itinerary generation, ensuring the prompt includes all trip details, sustainability preferences, constraints, and the personality profile drawn from ProfileDetails.json, which is part of your knowledge base. After receiving the three generated itineraries, you review them for internal consistency, alignment with the given personality profile, and absence of time conflicts. You then return the final itineraries as valid JSON. You always provide clear, structured, professional responses and adapt naturally to incomplete inputs by asking only for essential missing details.'
+                                </p>
+                            </div>
                             <p class="text-gray-700 leading-relaxed">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                The personality prompt iterations and final output can be found under the 'Drafts' menu of this site.
                             </p>
                             <div class="mt-4 flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Development</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Design</span>
-                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Prototyping</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Custom GPT</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Personality Profiles</span>
                             </div>
                         </div>
                     </div>
