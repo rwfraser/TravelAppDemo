@@ -1,0 +1,106 @@
+You are a senior full-stack developer tasked with building "EcoTrip Planner" - an AI-powered eco-friendly travel itinerary generator with complete user authentication and data persistence.
+
+PROJECT OVERVIEW: Build a React web application that generates personalized sustainable travel itineraries using OpenAI's GPT-4, with user authentication, itinerary saving, and a dashboard for managing saved trips.
+
+TECHNICAL REQUIREMENTS:
+
+Tech Stack:
+
+Frontend: React with Vite, TailwindCSS
+Backend/Auth: Supabase (Authentication + PostgreSQL)
+AI Integration: OpenAI API (GPT-4)
+Styling: Earth-tone color palette (#10b981 primary, #059669 secondary, #14b8a6 accent, #fefce8 background)
+
+Database Schema (Supabase):
+
+CREATE TABLE itineraries (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  user_id UUID REFERENCES auth.users(id) NOT NULL,
+  destination TEXT NOT NULL,
+  start_date DATE NOT NULL,
+  end_date DATE NOT NULL,
+  preferences TEXT,
+  ai_itinerary_json JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+ALTER TABLE itineraries ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view own itineraries" ON itineraries
+  FOR SELECT USING (auth.uid() = user_id);
+
+CREATE POLICY "Users can insert own itineraries" ON itineraries
+  FOR INSERT WITH CHECK (auth.uid() = user_id);
+
+
+REQUIRED SCREENS & FUNCTIONALITY:
+
+Landing/Auth Screen (/) - Public route
+Hero section with eco-friendly messaging
+Toggle between Sign Up/Sign In forms
+Form validation with inline error messages
+Redirect to /trip-setup on successful authentication
+Trip Setup Screen (/trip-setup) - Protected route
+Navigation bar with logo, "My Itineraries" link, user email, sign out
+
+Form fields: destination (required), start date (required), end date (required, must be after start), preferences (optional)
+"Generate Eco Itinerary" button with validation
+
+Itinerary Results Screen (/itinerary) - Protected route
+Display AI-generated day-by-day itinerary with morning/afternoon/evening activities
+Include eco-tips for each day
+Action buttons: "Save Itinerary", "Regenerate", "New Trip"
+Loading state during generation
+My Itineraries Screen (/my-itineraries) - Protected route
+Grid display of saved itineraries with destination, dates, preferences preview
+"View Details" buttons linking to individual itinerary pages
+Empty state messaging
+Itinerary Detail Screen (/itinerary/:id) - Protected route
+Full itinerary display with back navigation
+Ownership verification for security
+
+OpenAI INTEGRATION SPECIFICATIONS:
+
+API Configuration:
+Endpoint: https://api.openai.com/v1/chat/completions
+Model: gpt-4
+Temperature: 0.7
+System Prompt: "You are an expert eco-travel planner. Create detailed, sustainable itineraries highlighting nature-based activities, eco-lodges, local food, and low-impact transportation. Format responses as JSON with this exact structure: {days: [{day: 1, date: 'YYYY-MM-DD', morning: 'activity description', afternoon: 'activity description', evening: 'activity description', eco_tip: 'sustainability tip'}]}. Be specific and detailed for each time period."
+User Prompt Template: Create a ${numDays}-day eco-friendly itinerary for ${destination} from ${startDate} to ${endDate}. ${preferences ? Preferences: ${preferences} : 'Focus on sustainable travel options.'}
+
+IMPLEMENTATION REQUIREMENTS:
+
+Authentication:
+Implement Supabase Auth with email/password
+Protected route middleware redirecting unauthenticated users
+Session persistence and sign-out functionality
+
+Core Features:
+Calculate trip duration: (end_date - start_date) + 1
+Parse OpenAI JSON response and store in ai_itinerary_json field
+Implement save functionality with duplicate prevention
+Error handling for API failures, validation errors, and network issues
+Loading states with eco-friendly messaging and spinners
+
+Environment Variables:
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_OPENAI_API_KEY=your_openai_api_key
+
+DEVELOPMENT PRIORITIES:
+Supabase setup and authentication flow
+Protected routing and navigation
+Trip setup form with validation
+OpenAI integration and results display
+Save functionality and database operations
+My Itineraries dashboard
+Detail views and regeneration feature
+Polish, error handling, and responsive design
+
+DESIGN REQUIREMENTS:
+Mobile-first responsive design
+Eco-friendly icons (🌿 ♻️ 🚴 🌍) throughout interface
+Clean typography and accessible design
+Consistent earth-tone color scheme
+User-friendly error messages and empty states
+Deliver a complete, production-ready application with all specified features, proper error handling, and a polished user experience that emphasizes sustainability and ease of use.

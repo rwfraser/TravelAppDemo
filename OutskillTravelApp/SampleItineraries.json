@@ -1,0 +1,102 @@
+# Custom GPT (ChatGPT):  12/8/2025 12:13:00
+Please provide itineraries for a 'Sole Wanderer' traveler, who wishes to travel for 6 days in January 2026. 
+
+{
+  "travelerProfile": {
+    "name": "Solo Wanderer",
+    "description": "More introspective; values autonomy, may be structured or freeform.",
+    "preferences": [
+      "Independence",
+      "Reflection",
+      "Control over their schedule",
+      "May lean to quiet nature, small towns, or slower city exploration"
+    ],
+    "messaging": [
+      "Take time for yourself",
+      "Go at your own pace"
+    ]
+  },
+  "tripDetails": {
+    "durationDays": 6,
+    "month": "January",
+    "year": 2026
+  },
+  "itineraries": [
+    {
+      "id": 1,
+      "title": "Still Waters of Slovenia",
+      "theme": "Reflective Nature Escape",
+      "base": ["Lake Bled", "Triglav National Park", "Ljubljana"],
+      "region": "Europe (Slovenia)",
+      "focus": "Nature & reflection",
+      "pace": "Slow",
+      "idealFor": "Quiet introverts",
+      "days": [
+        {
+          "day": 1,
+          "activities": "Arrive in Ljubljana (train if from Europe). Explore the Old Town and riverside cafés. Overnight in a family-run eco guesthouse."
+        },
+        {
+          "day": 2,
+          "activities": "Train to Lake Bled. Walk the lakeside trail, optional winter rowboat to the island. Journaling time in the afternoon."
+        },
+        {
+          "day": 3,
+          "activities": "Hike part of Triglav National Park (snow trails with a local guide). Evening sauna in Bohinj."
+        },
+        {
+          "day": 4,
+          "activities": "Visit a local cheesemaker or honey farm; learn about traditional Alpine crafts."
+        },
+        {
+          "day": 5,
+          "activities": "Return to Ljubljana. Explore galleries and hidden bookshops."
+        },
+        {
+          "day": 6,
+          "activities": "Morning coffee at a local café; departure."
+        }
+      ],
+      "sustainabilityHighlights": [
+        "Public trains and buses only",
+        "Family-run accommodations",
+        "Local food focus"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Quiet Roads of Japan’s Kiso Valley",
+      "theme": "Cultural Solitude",
+      "base": ["Kyoto", "Nara", "Kiso Valley"],
+      "region": "Asia (Japan)",
+      "focus": "Cultural solitude",
+      "pace": "Moderate",
+      "idealFor": "Reflective learners",
+      "days": [
+        {
+          "day": 1,
+          "activities": "Arrive in Kyoto by shinkansen. Evening walk in Gion district."
+        },
+        {
+          "day": 2,
+          "activities": "Morning tea ceremony class, then train to Nara for temples and deer park visit."
+        },
+        {
+          "day": 3,
+          "activities": "Travel to Kiso Valley (Magome). Stay in a ryokan with vegetarian kaiseki dinner."
+        },
+        {
+          "day": 4,
+          "activities": "Solo walk along the historic Nakasendo trail (Magome–Tsumago). Journal or sketch mid-hike."
+        },
+        {
+          "day": 5,
+          "activities": "Local woodcraft workshop or hot-spring bath."
+        },
+        {
+          "day": 6,
+          "activities": "Return to Tokyo or Kyoto for departure."
+        }
+      ],
+      "sustainabilityHighlights": [
+        "Rail-based itinerary (

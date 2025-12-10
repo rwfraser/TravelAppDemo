@@ -1,0 +1,240 @@
+{
+  "travelProfiles": [
+    {
+      "id": 1,
+      "name": "Eco-Planner",
+      "description": "Calm, conscientious travelers who care deeply about impact and like control.",
+      "characteristics": {
+        "preferences": [
+          "Lower-carbon routes",
+          "Willing to accept longer travel times if framed as eco and thoughtful",
+          "Detailed plans",
+          "Clear expectations",
+          "Trustworthy providers"
+        ]
+      },
+      "recommendations": {
+        "transportation": [
+          "Train over flight",
+          "Direct over layovers if emissions differ",
+          "Night trains"
+        ],
+        "accommodations": [
+          "Detailed, low-impact itineraries",
+          "Carbon labels",
+          "Local, certified stays"
+        ],
+        "messaging": [
+          "Thoughtfully planned",
+          "Lower impact",
+          "Support local communities"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Eco-Adventurer",
+      "description": "Environmentally conscious, but also high on novelty and risk.",
+      "characteristics": {
+        "preferences": [
+          "Meaningful, lower-impact trips with some edge",
+          "Hiking, biking, remote eco-lodges",
+          "Volunteering",
+          "Off the beaten path but still sustainable"
+        ]
+      },
+      "recommendations": {
+        "transportation": [
+          "Adventure routes with lower emissions",
+          "Trekking, cycling, sailing instead of short flights"
+        ],
+        "accommodations": [
+          "Eco-lodges",
+          "Community-based tourism",
+          "Wildlife & nature trips"
+        ],
+        "messaging": [
+          "Adventure with purpose",
+          "Off-grid but low impact"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "Spontaneous Adventurer",
+      "description": "Thrill-seeking, novelty-oriented, flexible about plans, less driven by impact.",
+      "characteristics": {
+        "preferences": [
+          "Freedom",
+          "Last-minute options",
+          "Cool things to do now",
+          "Less interested in detailed itineraries",
+          "Surf trips, night-life, extreme sports, remote exploration"
+        ]
+      },
+      "recommendations": {
+        "transportation": [
+          "Flexible tickets",
+          "Last-minute deals",
+          "Open-jaw or one-way suggestions"
+        ],
+        "accommodations": [
+          "Adventure activities",
+          "Adrenaline sports",
+          "Hidden gems"
+        ],
+        "messaging": [
+          "Go with the flow",
+          "Book now, decide later",
+          "Spontaneous getaways"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "Comfort-Seeking Relaxer",
+      "description": "Low on risk/novelty, high on comfort and predictability.",
+      "characteristics": {
+        "preferences": [
+          "Easy, safe, comfortable experiences",
+          "Resorts, all-inclusives",
+          "Familiar destinations",
+          "Smooth transfers",
+          "Minimal hassle"
+        ]
+      },
+      "recommendations": {
+        "transportation": [
+          "Direct routes",
+          "High comfort class when possible",
+          "Fewer transfers"
+        ],
+        "accommodations": [
+          "Beach resorts",
+          "Spa retreats",
+          "Cruises",
+          "Quiet stays"
+        ],
+        "messaging": [
+          "Stress-free",
+          "All taken care of",
+          "Relax and unwind"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "Cultural Explorer",
+      "description": "Curious, reflective travelers who want depth over adrenaline.",
+      "characteristics": {
+        "preferences": [
+          "Local food, history, art",
+          "Walking tours",
+          "Homestays",
+          "Language experiences",
+          "Okay with some complexity if it leads to authenticity"
+        ]
+      },
+      "recommendations": {
+        "transportation": [
+          "City trips",
+          "Cultural routes",
+          "Heritage sites",
+          "Slow travel options (trains, multi-day stays in one city)"
+        ],
+        "accommodations": [
+          "Local guides",
+          "Cooking classes"
+        ],
+        "messaging": [
+          "Live like a local",
+          "Learn, connect, understand"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "Community-Focused Changemaker",
+      "description": "Strong value-driven travelers; impact and local benefit are central.",
+      "characteristics": {
+        "preferences": [
+          "Money supports local people, not just big chains",
+          "Open to homestays, co-ops, volunteering",
+          "Social enterprises",
+          "Responsible wildlife or conservation projects"
+        ]
+      },
+      "recommendations": {
+        "transportation": [],
+        "accommodations": [
+          "Community-based tourism",
+          "Homestays",
+          "Farm stays",
+          "Volunteering",
+          "Clear information on where money goes",
+          "Certifications",
+          "Impact metrics"
+        ],
+        "messaging": [
+          "Travel that gives back",
+          "Support local livelihoods",
+          "Ethical experiences"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "Social Weekender",
+      "description": "Moderate novelty, very social, often comfort or light adventure focused.",
+      "characteristics": {
+        "preferences": [
+          "Fun, social, often short trips",
+          "City breaks",
+          "Festivals",
+          "Nightlife",
+          "Group tours"
+        ]
+      },
+      "recommendations": {
+        "transportation": [],
+        "accommodations": [
+          "Group tours",
+          "Hostels",
+          "Social hostels",
+          "Co-living",
+          "Festivals"
+        ],
+        "messaging": [
+          "Meet new people",
+          "Group fun",
+          "Shared experiences"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "Solo Wanderer",
+      "description": "More introspective; values autonomy, may be structured or freeform.",
+      "characteristics": {
+        "preferences": [
+          "Independence",
+          "Reflection",
+          "Control over their schedule",
+          "May lean to quiet nature, small towns, or slower city exploration"
+        ]
+      },
+      "recommendations": {
+        "transportation": [
+          "Safe solo-friendly destinations and routes",
+          "Clear logistics and good information for Solo Planner",
+          "Open tickets and flexible stays for Solo Drifter"
+        ],
+        "accommodations": [],
+        "messaging": [
+          "Take time for yourself",
+          "Go at your own pace"
+        ]
+      }
+    }
+  ]
+}
